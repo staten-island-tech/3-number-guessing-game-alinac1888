@@ -1,6 +1,9 @@
 game = int(input("Guess a number between 1-10"))
 while game < 8:
     game = int(input("greater, guess another number between 1-10"))
-    
+
     if game == 8:
       print("correct")
+    elif game > 8:
+        game = int(input("less, guess another number between 1-10"))
+    break 
